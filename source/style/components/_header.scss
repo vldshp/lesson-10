@@ -1,0 +1,98 @@
+.info__header {
+  background-color: #ffffff;
+  width: 1300px;
+}
+
+.user {
+  display: flex;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+    border-right: 1px solid #F1F1F1;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
+.rounded_rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 18px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, #FD5272, #EA6D54);
+}
+
+.circle{
+  width: 6px;
+  height: 6px;
+  border-radius:50%;
+  background: #fff;
+  margin-left: 1px;
+}
+
+.folder {
+  width: 20px;
+  height: 18px;
+}
+
+.settings {
+  width: 21px;
+  height: 17px;
+}
+
+.upload {
+  width: 20px;
+  height: 18px;
+}
+
+.planet {
+  width: 20px;
+  height: 20px;
+}
+
+.envelope {
+  width: 20px;
+  height: 12px;
+}
+
+.stactics{
+  border-top: 1px solid #F1F1F1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 22px;
+
+  &__title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #777777;
+    margin-bottom: 9px;
+  }
+
+  &__daily {
+    tab-size: 20px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FD5272, #EA6D54);
+    margin-bottom: 8px;
+  }
+
+  &__course {
+    display: flex;
+  }
+
+  &__link{
+    font-size: 12px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #FD5272, #EA6D54);
+  }
+}

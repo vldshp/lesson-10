@@ -1,0 +1,10 @@
+@mixin primary-text{
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav {
+  background-color: blue;
+  height: 200px;
+}

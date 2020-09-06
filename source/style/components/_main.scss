@@ -1,0 +1,60 @@
+.info__main{
+  display: flex;
+  width: 990px;
+  margin: 18px;
+}
+
+.revenue{
+  margin-right: 18px;
+  display: flex;
+  margin-bottom: 19px;
+  justify-content: space-between;
+}
+.revenue__month{
+  width: 704px;
+  height: 266px;
+  background: #fff;
+}
+.revenue__hour{
+  width: 265px;
+  background: #fff;
+  text-align: center;
+
+
+}
+.customers{
+  display: flex;
+}
+.customers__feed{
+  width: 467px;
+  height: 508px;
+  background: #fff;
+  margin-right: 19px;
+}
+.task{
+  margin-right: 19px;
+}
+.task__today{
+  width: 501px;
+  height: 245px;
+  background: #fff;
+}
+.task__progress{
+  display: flex;
+margin-top: 19px;
+  justify-content: space-between;
+
+
+}
+
+.progress__graphic{
+  width: 241px;
+  background-color: #ffffff;
+  text-align: center;
+
+}
+.progress__shipments{
+  width: 241px;
+  height: 245px;
+  background-color: #ffffff;
+}

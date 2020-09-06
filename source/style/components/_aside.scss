@@ -1,0 +1,68 @@
+.aside {
+  width: 273px;
+  height: 835px;
+  background: #ffffff;
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(50deg, #FD5272, #EA6D54);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__users {
+    width: 24px;
+    height: 20px;
+  }
+
+  &__chat {
+    width: 20px;
+    height: 16px;
+  }
+
+  &__like {
+    width: 20px;
+    height: 16px;
+  }
+}
+
+.button__users {
+  width: 91px;
+  height: 48px;
+}
+
+.button__users:hover {
+  width: 91px;
+  height: 48px;
+  background: #C33D5A;
+}
+
+.button__chat {
+  width: 91px;
+  height: 48px;
+}
+
+.button__chat:hover {
+  width: 91px;
+  height: 48px;
+  background: #C33D5A;
+}
+
+.button__like {
+  width: 91px;
+  height: 48px;
+}
+
+.button__like:hover {
+  width: 91px;
+  height: 48px;
+  background: #C33D5A;
+}
