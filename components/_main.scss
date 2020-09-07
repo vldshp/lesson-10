@@ -1,0 +1,71 @@
+.info__main{
+  display: flex;
+  width: 990px;
+  margin: 18px;
+}
+
+.revenue{
+  margin-right: 18px;
+  display: flex;
+  margin-bottom: 19px;
+  justify-content: space-between;
+}
+.revenue__month{
+
+  background: #fff;
+
+}
+.month__img{
+  width: 650px;
+padding: 50px 25px 30px 25px;
+}
+.revenue__hour{
+  background: #fff;
+  text-align: center;
+}
+.hour__img{
+  width: 150px;
+  padding: 40px 60px 0 60px
+}
+.customers{
+  display: flex;
+}
+.customers__feed{
+  width: 467px;
+  height: 508px;
+  background: #fff;
+  margin-right: 19px;
+}
+.task{
+  margin-right: 19px;
+}
+.task__today{
+  width: 501px;
+  height: 245px;
+  background: #fff;
+}
+.task__progress{
+  display: flex;
+margin-top: 19px;
+  justify-content: space-between;
+
+
+}
+
+.progress__graphic{
+
+  background-color: #ffffff;
+  text-align: center;
+
+}
+.graphic__img{
+  width: 150px;
+  padding: 50px 40px 25px;
+}
+.progress__shipments{
+  background-color: #ffffff;
+}
+.shipment__img{
+  width: 200px;
+  padding: 30px 25px 0 25px;
+}
