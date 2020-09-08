@@ -435,7 +435,6 @@ textarea {
 
 .info__header {
   background-color: #ffffff;
-  width: 1300px;
 }
 
 .user {
@@ -461,12 +460,44 @@ textarea {
   background: linear-gradient(0deg, #FD5272, #EA6D54);
 }
 
+.user__kendall {
+  display: flex;
+}
+
+.kendall__avatar {
+  width: 70px;
+  height: 78px;
+}
+
+.kendall__name {
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 18px;
+  padding-top: 22px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #FD5272, #EA6D54);
+}
+
+.name__authority {
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 9px;
+  color: #BFBFBF;
+}
+
 .circle {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #fff;
   margin-left: 1px;
+}
+
+.point {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .folder {
@@ -527,6 +558,27 @@ textarea {
   background-image: linear-gradient(to right, #FD5272, #EA6D54);
 }
 
+.form__input {
+  border: solid #F1F1F1;
+  border-radius: 25px;
+  width: 299px;
+  height: 34px;
+  background-color: #F8F8F8;
+}
+.form__input-wrap {
+  position: relative;
+  padding: 0 140px;
+}
+.form__input-wrap::after {
+  content: url("source/img/icon/zoom.png");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translateY(-50%);
+}
+
 .info__main {
   display: flex;
   width: 990px;
@@ -541,15 +593,22 @@ textarea {
 }
 
 .revenue__month {
-  width: 704px;
-  height: 266px;
   background: #fff;
 }
 
+.month__img {
+  width: 650px;
+  padding: 50px 25px 30px 25px;
+}
+
 .revenue__hour {
-  width: 265px;
   background: #fff;
   text-align: center;
+}
+
+.hour__img {
+  width: 150px;
+  padding: 40px 60px 0 60px;
 }
 
 .customers {
@@ -580,15 +639,22 @@ textarea {
 }
 
 .progress__graphic {
-  width: 241px;
   background-color: #ffffff;
   text-align: center;
 }
 
+.graphic__img {
+  width: 150px;
+  padding: 50px 40px 25px;
+}
+
 .progress__shipments {
-  width: 241px;
-  height: 245px;
   background-color: #ffffff;
+}
+
+.shipment__img {
+  width: 200px;
+  padding: 30px 25px 0 25px;
 }
 
 .nav {
@@ -613,9 +679,21 @@ textarea {
   background-image: linear-gradient(to right, #FD5272, #EA6D54);
 }
 
+.nav__menu {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.menu__name {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+}
+
 .wrap {
   display: flex;
-  width: 1366px;
+  width: 95%;
+  max-width: 1400px;
   background-color: #EAEAEA;
   margin: 0 auto;
   padding-bottom: 0;

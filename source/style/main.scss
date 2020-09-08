@@ -3,13 +3,15 @@
 @import "config/mixin";
 @import "config/variables";
 @import "components/aside";
-@import "components/footer";
-@import "components/header";
+@import "components/_footer";
+@import "components/_header";
 @import "components/main";
 @import "components/nav";
+
 .wrap{
   display: flex;
-  width: 1366px;
+  width: 95%;
+  max-width: 1400px;
   background-color: #EAEAEA;
   margin: 0 auto;
   padding-bottom: 0;

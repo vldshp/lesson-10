@@ -11,16 +11,21 @@
   justify-content: space-between;
 }
 .revenue__month{
-  width: 704px;
-  height: 266px;
+
   background: #fff;
+
+}
+.month__img{
+  width: 650px;
+padding: 50px 25px 30px 25px;
 }
 .revenue__hour{
-  width: 265px;
   background: #fff;
   text-align: center;
-
-
+}
+.hour__img{
+  width: 150px;
+  padding: 40px 60px 0 60px
 }
 .customers{
   display: flex;
@@ -48,13 +53,19 @@ margin-top: 19px;
 }
 
 .progress__graphic{
-  width: 241px;
+
   background-color: #ffffff;
   text-align: center;
 
 }
+.graphic__img{
+  width: 150px;
+  padding: 50px 40px 25px;
+}
 .progress__shipments{
-  width: 241px;
-  height: 245px;
   background-color: #ffffff;
+}
+.shipment__img{
+  width: 200px;
+  padding: 30px 25px 0 25px;
 }

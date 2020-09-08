@@ -1,6 +1,5 @@
 .info__header {
   background-color: #ffffff;
-  width: 1300px;
 }
 
 .user {
@@ -26,13 +25,40 @@
   border-radius: 20px;
   background: linear-gradient(0deg, #FD5272, #EA6D54);
 }
+.user__kendall {
+  display: flex;
+}
 
+.kendall__avatar{
+  width: 70px;
+  height: 78px;
+}
+.kendall__name{
+  font-weight: 700;
+font-size: 16px;
+  padding-left: 18px;
+  padding-top: 22px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #FD5272, #EA6D54);
+}
+.name__authority{
+  font-weight: 400;
+  font-size: 12px;
+  padding-top: 9px;
+color: #BFBFBF;
+}
 .circle{
   width: 6px;
   height: 6px;
   border-radius:50%;
   background: #fff;
   margin-left: 1px;
+}
+.point{
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .folder {
@@ -96,3 +122,31 @@
     background-image: linear-gradient(to right, #FD5272, #EA6D54);
   }
 }
+
+
+  .form__input {
+    border: solid #F1F1F1;
+    border-radius: 25px;
+    width: 299px;
+    height: 34px;
+    background-color: #F8F8F8;
+
+    &-wrap {
+      position: relative;
+      padding: 0 140px;
+      //height: 34px;
+      //width: 299px;
+      &::after {
+        content: url('source/img/icon/zoom.png');
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        left: 68%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+
+
