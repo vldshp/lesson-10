@@ -661,6 +661,7 @@ textarea {
   height: 1000px;
   width: 5.2%;
   background: linear-gradient(0deg, #FD5272, #EA6D54);
+  position: relative;
 }
 .nav__item {
   width: 71px;
@@ -680,14 +681,29 @@ textarea {
 }
 
 .nav__menu {
-  text-align: center;
-  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.menu__name {
+.menu__item {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.item__name {
+  padding-top: 10px;
   font-weight: 400;
   color: #ffffff;
   font-size: 10px;
+}
+
+.menu__power {
+  margin-top: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .wrap {
