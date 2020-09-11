@@ -1,1 +1,1 @@
-# lesson-10
+ https://vldshp.github.io/lesson-10/.
