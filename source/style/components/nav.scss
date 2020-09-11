@@ -3,6 +3,7 @@
   width: 5.2%;
   background: linear-gradient(0deg, #FD5272, #EA6D54);
   position: relative;
+  box-shadow: 0 0 10px rgba(191, 191, 191,0.5);
 
   &__item {
     width: 71px;
@@ -30,7 +31,21 @@
 }
 .menu__item{
   text-align: center;
-  margin-top: 30px ;
+  margin-top: 30px;
+  position: relative;
+  &:hover {
+    background: #C33D5A;
+    &::after {
+      content: '';
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 10px solid transparent;
+      border-left: 20px solid #C33D5A;
+
+    }
+  }
 }
 .item__name{
   padding-top: 10px;

@@ -370,6 +370,7 @@ textarea {
 }
 
 .aside {
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
   width: 273px;
   height: 835px;
   background: #ffffff;
@@ -435,6 +436,7 @@ textarea {
 
 .info__header {
   background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
 }
 
 .user {
@@ -445,9 +447,13 @@ textarea {
   justify-content: center;
   align-items: center;
   height: 78px;
-  border-right: 1px solid #F1F1F1;
+  border-right: 1px solid #f1f1f1;
   padding-left: 19px;
   padding-right: 19px;
+}
+.user__link:nth-child(4) {
+  padding-left: 165px;
+  padding-right: 165px;
 }
 
 .rounded_rectangle {
@@ -457,7 +463,7 @@ textarea {
   width: 33px;
   height: 18px;
   border-radius: 20px;
-  background: linear-gradient(0deg, #FD5272, #EA6D54);
+  background: linear-gradient(0deg, #fd5272, #ea6d54);
 }
 
 .user__kendall {
@@ -476,14 +482,14 @@ textarea {
   padding-top: 22px;
   color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #FD5272, #EA6D54);
+  background-image: linear-gradient(to right, #fd5272, #ea6d54);
 }
 
 .name__authority {
   font-weight: 400;
   font-size: 12px;
   padding-top: 9px;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 
 .circle {
@@ -526,7 +532,7 @@ textarea {
 }
 
 .stactics {
-  border-top: 1px solid #F1F1F1;
+  border-top: 1px solid #f1f1f1;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -544,7 +550,7 @@ textarea {
   font-weight: 700;
   color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #FD5272, #EA6D54);
+  background-image: linear-gradient(to right, #fd5272, #ea6d54);
   margin-bottom: 8px;
 }
 .stactics__course {
@@ -555,28 +561,34 @@ textarea {
   font-weight: 700;
   color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #FD5272, #EA6D54);
+  background-image: linear-gradient(to right, #fd5272, #ea6d54);
 }
 
-.form__input {
-  border: solid #F1F1F1;
-  border-radius: 25px;
+.form__input-wrap {
   width: 299px;
   height: 34px;
-  background-color: #F8F8F8;
-}
-.form__input-wrap {
   position: relative;
-  padding: 0 140px;
 }
-.form__input-wrap::after {
-  content: url("source/img/icon/zoom.png");
-  width: 16px;
-  height: 16px;
+.form__input-wrap .form__input {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  border: 1px solid #f1f1f1;
+  border-radius: 50px;
+  outline: 0;
+  color: #c8c8c8;
+  font-size: 12px;
+  padding: 0 42px 0 13px;
+  box-sizing: border-box;
+}
+.form__input-wrap .form__input::placeholder {
+  color: #c8c8c8;
+}
+.form__input-wrap .icon {
   position: absolute;
   top: 50%;
-  left: 68%;
-  transform: translateY(-50%);
+  transform: translateY(-8px);
+  right: 13px;
 }
 
 .info__main {
@@ -593,22 +605,38 @@ textarea {
 }
 
 .revenue__month {
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
   background: #fff;
+}
+
+.month__title {
+  padding-top: 31px;
+  padding-left: 31px;
+  color: #767676;
+  font-weight: 700;
 }
 
 .month__img {
   width: 650px;
-  padding: 50px 25px 30px 25px;
+  padding: 31px 25px 30px 25px;
 }
 
 .revenue__hour {
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
   background: #fff;
   text-align: center;
+  padding-top: 31px;
+  margin-left: 18px;
+}
+
+.hour__title {
+  color: #767676;
+  font-weight: 700;
 }
 
 .hour__img {
   width: 150px;
-  padding: 40px 60px 0 60px;
+  padding: 31px 60px 0 60px;
 }
 
 .customers {
@@ -616,10 +644,85 @@ textarea {
 }
 
 .customers__feed {
-  width: 467px;
-  height: 508px;
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
   background: #fff;
   margin-right: 19px;
+}
+
+.feed__title {
+  padding-top: 25px;
+  padding-left: 25px;
+  color: #767676;
+  font-weight: 700;
+}
+
+.feed__sophie {
+  display: flex;
+  padding-top: 39px;
+}
+
+.sophie__avatar {
+  margin-left: 25px;
+  font-size: 8px;
+  color: #979796;
+}
+
+.sophie__text {
+  border: solid #F1F1F1;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #777777;
+  padding: 21px 0 18px 23px;
+  font-size: 12px;
+  background-color: #FCFCFC;
+}
+
+.feed__replica {
+  display: flex;
+}
+
+.replica__line {
+  width: 4px;
+  height: 187px;
+  background-color: #F1F1F1;
+  margin-left: 104px;
+  margin-right: 13px;
+  margin-top: 19px;
+}
+
+.text__text {
+  border: solid #F1F1F1;
+  color: #777777;
+  padding: 18px 8px 18px 15px;
+  font-size: 12px;
+  margin: 19px 20px 0 0;
+  background-color: #FCFCFC;
+}
+
+.feed__peter {
+  display: flex;
+  padding-top: 39px;
+}
+
+.peter__avatar {
+  margin-left: 25px;
+  font-size: 8px;
+  color: #979796;
+}
+
+.peter__text {
+  border: solid #F1F1F1;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #777777;
+  padding: 21px 0 18px 23px;
+  font-size: 12px;
+  background-color: #FCFCFC;
+}
+
+span {
+  color: #777777;
+  font-weight: 700;
 }
 
 .task {
@@ -627,9 +730,77 @@ textarea {
 }
 
 .task__today {
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
   width: 501px;
   height: 245px;
   background: #fff;
+  color: #BFBFBF;
+  font-size: 12px;
+}
+
+.today__title {
+  font-size: 14px;
+  padding-top: 31px;
+  padding-left: 31px;
+  color: #767676;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.task__menu {
+  margin: 14px 0 0 30px;
+}
+
+.task__menu {
+  display: flex;
+}
+
+.today__line {
+  margin-bottom: 7px;
+  margin-left: 30px;
+  margin-top: 8px;
+  width: 441px;
+  height: 2px;
+  background-color: #EDEDED;
+}
+
+.choice__title {
+  background: linear-gradient(to right, #fd5272, #ea6d54);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: 11px;
+  padding-right: 33px;
+}
+
+.menu__choice {
+  width: 10px;
+  height: 10px;
+  border: solid #E2E2E2;
+  border-radius: 50%;
+}
+
+.menu__selected {
+  text-align: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #fd5272, #ea6d54);
+}
+
+.choice__text {
+  color: #BFBFBF;
+}
+
+.choice__watch {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.choice__time {
+  flex-grow: unset;
+  color: #9C9C9C;
+  margin-left: 9px;
+  margin-right: 29px;
 }
 
 .task__progress {
@@ -639,22 +810,112 @@ textarea {
 }
 
 .progress__graphic {
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
   background-color: #ffffff;
   text-align: center;
 }
 
+.graphic__title {
+  background: #fff;
+  text-align: center;
+  padding-top: 31px;
+  color: #767676;
+  font-weight: 700;
+}
+
 .graphic__img {
   width: 150px;
-  padding: 50px 40px 25px;
+  padding: 20px 40px 25px;
 }
 
 .progress__shipments {
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
   background-color: #ffffff;
+}
+
+.shipments__title {
+  background: #fff;
+  text-align: center;
+  padding-top: 31px;
+  color: #767676;
+  font-weight: 700;
 }
 
 .shipment__img {
   width: 200px;
-  padding: 30px 25px 0 25px;
+  padding: 10px 25px 0 25px;
+}
+
+.aside__members {
+  display: flex;
+  padding-top: 20px;
+}
+
+.members__img {
+  margin-left: 21px;
+}
+
+.members__text {
+  padding-left: 16px;
+}
+
+.name {
+  color: #777777;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.authority {
+  font-size: 10px;
+  color: #BFBFBF;
+  padding-top: 10px;
+}
+
+.members__message {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.members__line {
+  width: 233px;
+  height: 2px;
+  background: #F1F1F1;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
+.aside__input-wrap {
+  margin-top: 35px;
+  height: 48px;
+  position: relative;
+}
+.aside__input-wrap .aside__input {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  border: 1px solid #f1f1f1;
+  outline: 0;
+  color: #c8c8c8;
+  font-size: 10px;
+  padding: 0 42px 0 13px;
+  box-sizing: border-box;
+  text-decoration: underline;
+}
+.aside__input-wrap .aside__input::placeholder {
+  color: #c8c8c8;
+}
+.aside__input-wrap .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-8px);
+  right: 40px;
+}
+.aside__input-wrap .edit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-8px);
+  right: 13px;
 }
 
 .nav {
@@ -662,6 +923,7 @@ textarea {
   width: 5.2%;
   background: linear-gradient(0deg, #FD5272, #EA6D54);
   position: relative;
+  box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
 }
 .nav__item {
   width: 71px;
@@ -689,6 +951,19 @@ textarea {
 .menu__item {
   text-align: center;
   margin-top: 30px;
+  position: relative;
+}
+.menu__item:hover {
+  background: #C33D5A;
+}
+.menu__item:hover::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 10px solid transparent;
+  border-left: 20px solid #C33D5A;
 }
 
 .item__name {
