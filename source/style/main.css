@@ -521,6 +521,11 @@ aside {
   text-align: center;
 }
 
+.companys__icon {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
 .info__header {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(191, 191, 191, 0.5);
